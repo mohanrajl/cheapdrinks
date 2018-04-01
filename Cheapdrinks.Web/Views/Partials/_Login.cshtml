@@ -1,0 +1,137 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using System.Web.Mvc.Html
+@using Cheapdrinks.Web.Extensions.Controllers
+@using ClientDependency.Core.Mvc
+@using Umbraco.Web
+@using Umbraco.Web.Models
+@{
+    var loginModel = new LoginModel();    
+    Html.EnableClientValidation();
+    Html.EnableUnobtrusiveJavaScript();
+    Html.RequiresJs("/umbraco_client/ui/jquery.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.min.js");
+    Html.RequiresJs("/umbraco_client/Application/JQuery/jquery.validate.unobtrusive.min.js");
+}
+
+@* NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed *@
+@Html.RenderJsHere()
+
+
+@*<section class="no-header" id="login">
+    <div class="container">        
+
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5 text">
+                <img src="~/images/fft.jpg" alt="WED 2017">                
+            </div>
+            <div class="col-sm-8 col-sm-offset-2 text">                
+                <div class="header"><h1><b>@Model.Content.GetPropertyValue("welcomeText")</b></h1></div>
+            </div>
+        </div>
+
+        <div class="row">            
+            @using (Html.BeginUmbracoForm<AuthenticationSurfaceController>("Login"))
+            {            
+                @Html.AntiForgeryToken()
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>@Model.Content.GetPropertyValue("loginSectionText")</h3>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="form-top-left">
+                                <h4>@Html.ValidationSummary("loginModelen", true)</h4>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">@Model.Content.GetPropertyValue("emailAddress")</label>
+                                @Html.TextBoxFor(m => loginModel.Username,
+                         htmlAttributes: new
+                         {                             
+                             id = "form-username",
+                             @class = "form-username form-control",
+                             placeholder = @Model.Content.GetPropertyValue("emailAddress")
+                         })
+                                @Html.ValidationMessageFor(m => loginModel.Username)
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">@Model.Content.GetPropertyValue("passwordText")</label>
+                                @Html.PasswordFor(m => loginModel.Password,
+                         htmlAttributes: new
+                         {
+                             id = "form-password",
+                             @class = "form-password form-control",
+                             placeholder = @Model.Content.GetPropertyValue("passwordText")
+                         })
+                                @Html.ValidationMessageFor(m => loginModel.Password)
+                            </div>
+                            <button name="culture" type="submit" value="en-GB" class="btn">Signin</button>
+                            <p class="forgot"><a href="@Umbraco.NiceUrl(int.Parse(Model.Content.GetPropertyValue("forgotPasswordPage").ToString()))">@Model.Content.GetPropertyValue("forgotPasswordLinkText")</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="col-sm-1 middle-border"></div>
+            <div class="col-sm-1"></div>
+            @using (Html.BeginUmbracoForm<AuthenticationSurfaceController>("Login"))
+            {
+                @Html.AntiForgeryToken()
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>@Model.Content.GetPropertyValue("loginSectionText")</h3>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <div class="form-top-left">
+                                <h4>@Html.ValidationSummary("loginModelcy", true)</h4>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-username">@Model.Content.GetPropertyValue("emailAddress")</label>
+                                @Html.TextBoxFor(m => loginModel.Username,
+                                                htmlAttributes: new
+                                                {   
+                                                    id = "form-username",
+                                                    @class = "form-username form-control",
+                                                    placeholder = @Model.Content.GetPropertyValue("emailAddress")
+                                                })
+                                @Html.ValidationMessageFor(m => loginModel.Username)
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">@Model.Content.GetPropertyValue("passwordText")</label>
+                                @Html.PasswordFor(m => loginModel.Password,
+                                                htmlAttributes: new
+                                                {
+                                                    id = "form-password",
+                                                    @class = "form-password form-control",
+                                                    placeholder = @Model.Content.GetPropertyValue("passwordText")
+                                                })
+                                @Html.ValidationMessageFor(m => loginModel.Password)
+                            </div>
+                            <button name="culture" type="submit" value="cy-GB" class="btn">@Model.Content.GetPropertyValue("signInButtonText")</button>
+                            <p class="forgot"><a href="@Umbraco.NiceUrl(int.Parse(Model.Content.GetPropertyValue("forgotPasswordPage").ToString()))">@Model.Content.GetPropertyValue("forgotPasswordLinkText")</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>  
+        
+        <br />
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p class="bg-info text-center"><b>@Model.Content.GetPropertyValue("footerText") / @Model.Content.GetPropertyValue("footerText")</b></p>
+            </div>
+        </div>
+    </div>
+     / END CONTAINER 
+</section>*@

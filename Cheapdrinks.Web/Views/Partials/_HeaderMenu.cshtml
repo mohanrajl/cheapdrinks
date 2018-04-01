@@ -1,0 +1,116 @@
+﻿@inherits UmbracoViewPage<Cheapdrinks.Web.Extensions.ViewModels.NavigationViewModel>
+@using Cheapdrinks.Web.Extensions.Controllers
+@using Umbraco.Web;
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- /.navbar-header -->
+    <ul class="nav navbar-top-links navbar-right">
+        <li class="dropdown">
+            @if (!string.IsNullOrWhiteSpace(Model.CurrenPageUrl))
+            {
+                <a class="dropdown-toggle" data-toggle="dropdown" href="@Model.CurrenPageUrl">
+                    @if (Model.CurrentLanguage != null)
+                    {
+                        <img src="~/images/@(Model.CurrentLanguage.DisplayName).png" alt="@Model.CurrentLanguage.DisplayName">
+                        <b> @Model.CurrentLanguage.DisplayName</b>
+                        <span class="caret"></span>
+                    }
+                </a>
+            }
+
+            @if (Model.Languages != null && Model.Languages.Count > 0)
+            {
+                <ul class="dropdown-menu dropdown-user">
+                    @foreach (var language in Model.Languages)
+                    {
+                        <li><a href="@Model.CurrenPageUrl.Replace("/" + Model.CurrentLanguage.TwoLetterISOLanguageName + "/", "/" + language.TwoLetterISOLanguageName + "/")"><img src="~/images/@(language.DisplayName).png" alt="@language.DisplayName"><b> @language.DisplayName</b></a></li>
+                    }
+                </ul>
+            }
+            <!-- /.dropdown-user -->
+        </li>
+        <li>
+            @using (Html.BeginUmbracoForm<AuthenticationSurfaceController>("Logout", null, new { @id = "logout" }))
+            {
+                <a href="#" onclick="document.getElementById('logout').submit()">
+                    <img src="~/images/Signout.png" alt="@this.Umbraco.AssignedContentItem.GetPropertyValue("logoutButtonText")">
+                </a>
+            }
+        </li>
+        <!-- /.dropdown -->
+    </ul>
+    <!-- /.navbar-top-links -->
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav navbar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="sidebar-search">
+                    @using (Html.BeginUmbracoForm<SearchTicketSurfaceController>("Search", FormMethod.Get))
+                    {
+                        <div class="input-group custom-search-form">
+                            <input type="number" class="form-control" name="searchTicketId" required placeholder="@this.Umbraco.AssignedContentItem.GetPropertyValue("searchTicket")">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <img src="~/images/search.png" alt="search" />
+                                </button>
+                            </span>
+                        </div>
+                    }
+                    <!-- /input-group -->
+                </li>
+                @if (this.Model.HomePageInformation != null && !string.IsNullOrWhiteSpace(this.Model.HomePageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.HomePageInformation.Url))
+                {
+                    <li>
+                        <a class="@(this.Model.HomePageInformation.Alias.Equals("home") ? " active" : "")" href="@this.Model.HomePageInformation.Url"><b>@this.Model.HomePageInformation.Name</b></a>
+                    </li>
+                }
+                @if (ViewBag.CanCreate)
+                {
+                    if (this.Model.CreateTicketPageInformation != null && !string.IsNullOrWhiteSpace(this.Model.CreateTicketPageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.CreateTicketPageInformation.Url))
+                    {
+                        <li>
+                            <a href="@this.Model.CreateTicketPageInformation.Url"><b>@this.Model.CreateTicketPageInformation.Name</b></a>
+                        </li>
+                    }
+                }
+                @if (this.Model.MyTicketsPageInformation != null && !string.IsNullOrWhiteSpace(this.Model.MyTicketsPageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.MyTicketsPageInformation.Url))
+                {
+                    <li>
+                        <a href="@this.Model.MyTicketsPageInformation.Url"><b>@this.Model.MyTicketsPageInformation.Name</b></a>
+                    </li>
+                }
+                @if (this.Members.GetCurrentMember().DocumentTypeAlias != "school")
+                {
+                    if (this.Model.AllTicketsPageInformation != null && !string.IsNullOrWhiteSpace(this.Model.AllTicketsPageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.AllTicketsPageInformation.Url))
+                    {
+                        <li>
+                            <a href="@this.Model.AllTicketsPageInformation.Url"><b>@this.Model.AllTicketsPageInformation.Name</b></a>
+                        </li>
+                    }
+                    if (this.Model.TriagePageInformation != null && !string.IsNullOrWhiteSpace(this.Model.TriagePageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.TriagePageInformation.Url))
+                    {
+                        <li>
+                            <a href="@this.Model.TriagePageInformation.Url"><b>@this.Model.TriagePageInformation.Name</b></a>
+                        </li>
+                    }
+                }
+                @if (this.Model.FaqPageInformation != null && !string.IsNullOrWhiteSpace(this.Model.FaqPageInformation.Name) && !string.IsNullOrWhiteSpace(this.Model.FaqPageInformation.Url))
+                {
+                    <li>
+                        <a href="@this.Model.FaqPageInformation.Url"><b>@this.Model.FaqPageInformation.Name</b></a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+</nav>

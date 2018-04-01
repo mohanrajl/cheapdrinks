@@ -1,0 +1,156 @@
+﻿@using Cheapdrinks.Web.Extensions.Controllers
+@using Cheapdrinks.Web.Extensions.ViewModels
+
+@inherits UmbracoViewPage<Cheapdrinks.Web.Extensions.ViewModels.ResetPasswordRenderViewModel>
+
+<section class="no-header" id="reset">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5 text">
+                <img src="~/images/fft.jpg" alt="WED 2017">
+            </div>
+            <div class="col-sm-8 col-sm-offset-2 text">                
+                <div class="header"><h1><b>@Model.Content.GetPropertyValue("welcomeText", true)</b></h1></div>
+            </div>
+        </div>
+
+        <div class="row">
+            @using (Html.BeginUmbracoForm<AuthenticationSurfaceController>("ResetPassword"))
+            {
+                var resetPasswordViewModelEnglish = new ResetPasswordViewModel();
+                @Html.AntiForgeryToken()
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>@Model.Content.GetPropertyValue("resetPasswordSectionText")</h3>
+                            </div>
+                            <div class="form-top-left">
+                                <h5><i>@Model.Content.GetPropertyValue("instruction")</i></h5>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <h4>@Html.ValidationSummary("resetPassworden", true)</h4>                            
+                            <div class="form-group">
+                                <label class="sr-only" for="form-emailaddress">@Model.Content.GetPropertyValue("emailAddressText")</label>
+
+                                @*Email address field*@
+                                @Html.TextBoxFor(m => resetPasswordViewModelEnglish.EmailAddress,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-emailaddress",
+                                            @class = "form-emailaddress form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("emailAddressText")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelEnglish.EmailAddress)
+                            </div>
+                            <div class="form-group">                                
+                                @*Password field*@
+                                <label class="sr-only" for="form-password">@Model.Content.GetPropertyValue("password")</label>
+                                @Html.PasswordFor(m => resetPasswordViewModelEnglish.Password,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-password",
+                                            @class = "form-password form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("password")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelEnglish.Password)
+                            </div>
+                            <div class="form-group">
+                                @*Confirm Password field*@
+                                <label class="sr-only" for="form-confirmpassword">@Model.Content.GetPropertyValue("confirmPassword")</label>
+                                @Html.PasswordFor(m => resetPasswordViewModelEnglish.ConfirmPassword,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-confirmpassword",
+                                            @class = "form-confirmpassword form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("confirmPassword")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelEnglish.ConfirmPassword)
+                            </div>
+                            <button name="culture" type="submit" value="en-GB" class="btn">@Model.Content.GetPropertyValue("resetButtonText")</button>
+                            <p class="forgot"><a href=@this.Umbraco.NiceUrl(this.Umbraco.TypedContentAtRoot().First().Id)>@Model.Content.GetPropertyValue("returnUrlText")</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <div class="col-sm-1 middle-border"></div>
+            <div class="col-sm-1"></div>
+            @using (Html.BeginUmbracoForm<AuthenticationSurfaceController>("ResetPassword"))
+            {
+                var resetPasswordViewModelWelsh = new ResetPasswordViewModel();
+                @Html.AntiForgeryToken()
+                <div class="col-sm-5">
+                    <div class="form-box">
+                        <div class="form-top">
+                            <div class="form-top-left">
+                                <h3>@Model.Content.GetPropertyValue("resetPasswordSectionText")</h3>
+                            </div>
+                            <div class="form-top-left">
+                                <h5><i>@Model.Content.GetPropertyValue("instruction")</i></h5>
+                            </div>
+                            <div class="form-top-right">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                        </div>
+                        <div class="form-bottom">
+                            <h4>@Html.ValidationSummary("resetPasswordcy", true)</h4>                            
+                            <div class="form-group">
+                                <label class="sr-only" for="form-emailaddress">@Model.Content.GetPropertyValue("emailAddressText")</label>
+
+                                @*Email address field*@
+                                @Html.TextBoxFor(m => resetPasswordViewModelWelsh.EmailAddress,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-emailaddress",
+                                            @class = "form-emailaddress form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("emailAddressText")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelWelsh.EmailAddress)
+                            </div>
+                            <div class="form-group">
+                                @*Password field*@
+                                <label class="sr-only" for="form-password">@Model.Content.GetPropertyValue("password")</label>
+                                @Html.PasswordFor(m => resetPasswordViewModelWelsh.Password,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-password",
+                                            @class = "form-password form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("password")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelWelsh.Password)
+                            </div>
+                            <div class="form-group">
+                                @*Confirm Password field*@
+                                <label class="sr-only" for="form-confirmpassword">@Model.Content.GetPropertyValue("confirmPassword")</label>
+                                @Html.PasswordFor(m => resetPasswordViewModelWelsh.ConfirmPassword,
+                                        htmlAttributes: new
+                                        {
+                                            id = "form-confirmpassword",
+                                            @class = "form-confirmpassword form-control",
+                                            placeholder = @Model.Content.GetPropertyValue("confirmPassword")
+                                        })
+                                @Html.ValidationMessageFor(m => resetPasswordViewModelWelsh.ConfirmPassword)
+                            </div>
+                            <button name="culture" type="submit" value="cy-GB" class="btn">@Model.Content.GetPropertyValue("resetButtonText")</button>
+                            <p class="forgot"><a href=@this.Umbraco.NiceUrl(this.Umbraco.TypedContentAtRoot().First().Id)>@Model.Content.GetPropertyValue("returnUrlText")</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p class="bg-info text-center"><b>@Model.Content.GetPropertyValue("footerText") / @Model.Content.GetPropertyValue("footerText")</b></p>
+            </div>
+        </div>
+    </div>
+    <!-- / END CONTAINER -->
+</section>

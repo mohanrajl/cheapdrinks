@@ -1,0 +1,2582 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "AutoMapper/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        }
+      },
+      "ClientDependency/1.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        }
+      },
+      "ClientDependency-Mvc5/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ClientDependency": "1.8.0",
+          "Microsoft.AspNet.Mvc": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        }
+      },
+      "Examine/0.1.89": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "2.9.4.1"
+        },
+        "compile": {
+          "lib/net45/Examine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Examine.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "ImageProcessor/2.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ImageProcessor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.dll": {}
+        }
+      },
+      "ImageProcessor.Web/4.8.7": {
+        "type": "package",
+        "dependencies": {
+          "ImageProcessor": "2.5.6",
+          "Microsoft.IO.RecyclableMemoryStream": "1.2.2"
+        },
+        "compile": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Log4Net.Async/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.3"
+        },
+        "compile": {
+          "lib/net40/Log4Net.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Log4Net.Async.dll": {}
+        }
+      },
+      "Lucene.Net/2.9.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.dll": {}
+        }
+      },
+      "Markdown/1.14.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MarkdownSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MarkdownSharp.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.1",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Microsoft.Owin.Security.Cookies": "2.1.0",
+          "Microsoft.Owin.Security.OAuth": "2.1.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.1.0",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
+      "Microsoft.Owin/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "MiniProfiler/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MiniProfiler.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MiniProfiler.dll": {}
+        }
+      },
+      "MySql.Data/6.9.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "semver/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Semver.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Semver.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "UmbracoCms.Core/7.10.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[3.3.1, 4.0.0)",
+          "ClientDependency": "[1.9.6, 2.0.0)",
+          "ClientDependency-Mvc5": "[1.8.0, 2.0.0)",
+          "Examine": "[0.1.89, 1.0.0)",
+          "HtmlAgilityPack": "[1.4.9.5, 2.0.0)",
+          "ImageProcessor": "[2.5.6, 3.0.0)",
+          "ImageProcessor.Web": "[4.8.7, 5.0.0)",
+          "Log4Net.Async": "[2.0.4, 3.0.0)",
+          "Lucene.Net": "[2.9.4.1, 3.0.0)",
+          "Markdown": "[1.14.7, 2.0.0)",
+          "Microsoft.AspNet.Identity.Owin": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.Mvc": "[5.2.3, 6.0.0)",
+          "Microsoft.AspNet.SignalR.Core": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.WebApi": "[5.2.3, 6.0.0)",
+          "Microsoft.Owin.Host.SystemWeb": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.Cookies": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.OAuth": "[3.1.0, 4.0.0)",
+          "MiniProfiler": "[2.1.0, 3.0.0)",
+          "MySql.Data": "[6.9.9, 7.0.0)",
+          "Newtonsoft.Json": "[10.0.2, 11.0.0)",
+          "System.Threading.Tasks.Dataflow": "[4.7.0, 5.0.0)",
+          "System.ValueTuple": "[4.4.0, 5.0.0)",
+          "log4net": "[2.0.8, 3.0.0)",
+          "semver": "[1.1.2, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "AutoMapper/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        }
+      },
+      "ClientDependency/1.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        }
+      },
+      "ClientDependency-Mvc5/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ClientDependency": "1.8.0",
+          "Microsoft.AspNet.Mvc": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        }
+      },
+      "Examine/0.1.89": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "2.9.4.1"
+        },
+        "compile": {
+          "lib/net45/Examine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Examine.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "ImageProcessor/2.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ImageProcessor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.dll": {}
+        }
+      },
+      "ImageProcessor.Web/4.8.7": {
+        "type": "package",
+        "dependencies": {
+          "ImageProcessor": "2.5.6",
+          "Microsoft.IO.RecyclableMemoryStream": "1.2.2"
+        },
+        "compile": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Log4Net.Async/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.3"
+        },
+        "compile": {
+          "lib/net40/Log4Net.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Log4Net.Async.dll": {}
+        }
+      },
+      "Lucene.Net/2.9.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.dll": {}
+        }
+      },
+      "Markdown/1.14.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MarkdownSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MarkdownSharp.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.1",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Microsoft.Owin.Security.Cookies": "2.1.0",
+          "Microsoft.Owin.Security.OAuth": "2.1.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.1.0",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
+      "Microsoft.Owin/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "MiniProfiler/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MiniProfiler.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MiniProfiler.dll": {}
+        }
+      },
+      "MySql.Data/6.9.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "semver/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Semver.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Semver.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "UmbracoCms.Core/7.10.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[3.3.1, 4.0.0)",
+          "ClientDependency": "[1.9.6, 2.0.0)",
+          "ClientDependency-Mvc5": "[1.8.0, 2.0.0)",
+          "Examine": "[0.1.89, 1.0.0)",
+          "HtmlAgilityPack": "[1.4.9.5, 2.0.0)",
+          "ImageProcessor": "[2.5.6, 3.0.0)",
+          "ImageProcessor.Web": "[4.8.7, 5.0.0)",
+          "Log4Net.Async": "[2.0.4, 3.0.0)",
+          "Lucene.Net": "[2.9.4.1, 3.0.0)",
+          "Markdown": "[1.14.7, 2.0.0)",
+          "Microsoft.AspNet.Identity.Owin": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.Mvc": "[5.2.3, 6.0.0)",
+          "Microsoft.AspNet.SignalR.Core": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.WebApi": "[5.2.3, 6.0.0)",
+          "Microsoft.Owin.Host.SystemWeb": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.Cookies": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.OAuth": "[3.1.0, 4.0.0)",
+          "MiniProfiler": "[2.1.0, 3.0.0)",
+          "MySql.Data": "[6.9.9, 7.0.0)",
+          "Newtonsoft.Json": "[10.0.2, 11.0.0)",
+          "System.Threading.Tasks.Dataflow": "[4.7.0, 5.0.0)",
+          "System.ValueTuple": "[4.4.0, 5.0.0)",
+          "log4net": "[2.0.8, 3.0.0)",
+          "semver": "[1.1.2, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "AutoMapper/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        }
+      },
+      "ClientDependency/1.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        }
+      },
+      "ClientDependency-Mvc5/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ClientDependency": "1.8.0",
+          "Microsoft.AspNet.Mvc": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        }
+      },
+      "Examine/0.1.89": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "2.9.4.1"
+        },
+        "compile": {
+          "lib/net45/Examine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Examine.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "ImageProcessor/2.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ImageProcessor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.dll": {}
+        }
+      },
+      "ImageProcessor.Web/4.8.7": {
+        "type": "package",
+        "dependencies": {
+          "ImageProcessor": "2.5.6",
+          "Microsoft.IO.RecyclableMemoryStream": "1.2.2"
+        },
+        "compile": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Log4Net.Async/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.3"
+        },
+        "compile": {
+          "lib/net40/Log4Net.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Log4Net.Async.dll": {}
+        }
+      },
+      "Lucene.Net/2.9.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.dll": {}
+        }
+      },
+      "Markdown/1.14.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MarkdownSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MarkdownSharp.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.1",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Microsoft.Owin.Security.Cookies": "2.1.0",
+          "Microsoft.Owin.Security.OAuth": "2.1.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.1.0",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
+      "Microsoft.Owin/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "MiniProfiler/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MiniProfiler.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MiniProfiler.dll": {}
+        }
+      },
+      "MySql.Data/6.9.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "semver/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Semver.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Semver.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "UmbracoCms.Core/7.10.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[3.3.1, 4.0.0)",
+          "ClientDependency": "[1.9.6, 2.0.0)",
+          "ClientDependency-Mvc5": "[1.8.0, 2.0.0)",
+          "Examine": "[0.1.89, 1.0.0)",
+          "HtmlAgilityPack": "[1.4.9.5, 2.0.0)",
+          "ImageProcessor": "[2.5.6, 3.0.0)",
+          "ImageProcessor.Web": "[4.8.7, 5.0.0)",
+          "Log4Net.Async": "[2.0.4, 3.0.0)",
+          "Lucene.Net": "[2.9.4.1, 3.0.0)",
+          "Markdown": "[1.14.7, 2.0.0)",
+          "Microsoft.AspNet.Identity.Owin": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.Mvc": "[5.2.3, 6.0.0)",
+          "Microsoft.AspNet.SignalR.Core": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.WebApi": "[5.2.3, 6.0.0)",
+          "Microsoft.Owin.Host.SystemWeb": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.Cookies": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.OAuth": "[3.1.0, 4.0.0)",
+          "MiniProfiler": "[2.1.0, 3.0.0)",
+          "MySql.Data": "[6.9.9, 7.0.0)",
+          "Newtonsoft.Json": "[10.0.2, 11.0.0)",
+          "System.Threading.Tasks.Dataflow": "[4.7.0, 5.0.0)",
+          "System.ValueTuple": "[4.4.0, 5.0.0)",
+          "log4net": "[2.0.8, 3.0.0)",
+          "semver": "[1.1.2, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "AutoMapper/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        },
+        "runtime": {
+          "lib/net40/AutoMapper.Net4.dll": {},
+          "lib/net40/AutoMapper.dll": {}
+        }
+      },
+      "ClientDependency/1.9.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.dll": {}
+        }
+      },
+      "ClientDependency-Mvc5/1.8.0": {
+        "type": "package",
+        "dependencies": {
+          "ClientDependency": "1.8.0",
+          "Microsoft.AspNet.Mvc": "5.0.0"
+        },
+        "compile": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ClientDependency.Core.Mvc.dll": {}
+        }
+      },
+      "Examine/0.1.89": {
+        "type": "package",
+        "dependencies": {
+          "Lucene.Net": "2.9.4.1"
+        },
+        "compile": {
+          "lib/net45/Examine.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Examine.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.4.9.5": {
+        "type": "package",
+        "compile": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        },
+        "runtime": {
+          "lib/Net45/HtmlAgilityPack.dll": {}
+        }
+      },
+      "ImageProcessor/2.5.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ImageProcessor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.dll": {}
+        }
+      },
+      "ImageProcessor.Web/4.8.7": {
+        "type": "package",
+        "dependencies": {
+          "ImageProcessor": "2.5.6",
+          "Microsoft.IO.RecyclableMemoryStream": "1.2.2"
+        },
+        "compile": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageProcessor.Web.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "Log4Net.Async/2.0.4": {
+        "type": "package",
+        "dependencies": {
+          "log4net": "2.0.3"
+        },
+        "compile": {
+          "lib/net40/Log4Net.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Log4Net.Async.dll": {}
+        }
+      },
+      "Lucene.Net/2.9.4.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpZipLib": "0.86.0"
+        },
+        "compile": {
+          "lib/net40/Lucene.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Lucene.Net.dll": {}
+        }
+      },
+      "Markdown/1.14.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MarkdownSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MarkdownSharp.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Identity.Owin/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Identity.Core": "2.2.1",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Microsoft.Owin.Security.Cookies": "2.1.0",
+          "Microsoft.Owin.Security.OAuth": "2.1.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Owin.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Mvc/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.3, 3.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/3.2.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.SignalR.Core/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "2.1.0",
+          "Microsoft.Owin.Security": "2.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.SignalR.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.WebHost": "[5.2.3, 5.3.0)"
+        }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.Core/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.3"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Core": "[5.2.3, 5.3.0)"
+        },
+        "compile": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Http.WebHost.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/3.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "[3.2.3, 3.3.0)",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Helpers.dll": {},
+          "lib/net45/System.Web.WebPages.Deployment.dll": {},
+          "lib/net45/System.Web.WebPages.Razor.dll": {},
+          "lib/net45/System.Web.WebPages.dll": {}
+        }
+      },
+      "Microsoft.IO.RecyclableMemoryStream/1.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll": {}
+        }
+      },
+      "Microsoft.Owin/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {}
+        }
+      },
+      "Microsoft.Owin.Host.SystemWeb/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Host.SystemWeb.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {}
+        }
+      },
+      "Microsoft.Owin.Security.OAuth/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "3.1.0",
+          "Microsoft.Owin.Security": "3.1.0",
+          "Newtonsoft.Json": "6.0.4",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.OAuth.dll": {}
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
+      "MiniProfiler/2.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/MiniProfiler.dll": {}
+        },
+        "runtime": {
+          "lib/net40/MiniProfiler.dll": {}
+        }
+      },
+      "MySql.Data/6.9.9": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MySql.Data.dll": {}
+        }
+      },
+      "Newtonsoft.Json/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Owin/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Owin.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Owin.dll": {}
+        }
+      },
+      "semver/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Semver.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Semver.dll": {}
+        }
+      },
+      "SharpZipLib/0.86.0": {
+        "type": "package",
+        "compile": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        },
+        "runtime": {
+          "lib/20/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "System.Threading.Tasks.Dataflow/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll": {}
+        }
+      },
+      "System.ValueTuple/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "UmbracoCms.Core/7.10.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[3.3.1, 4.0.0)",
+          "ClientDependency": "[1.9.6, 2.0.0)",
+          "ClientDependency-Mvc5": "[1.8.0, 2.0.0)",
+          "Examine": "[0.1.89, 1.0.0)",
+          "HtmlAgilityPack": "[1.4.9.5, 2.0.0)",
+          "ImageProcessor": "[2.5.6, 3.0.0)",
+          "ImageProcessor.Web": "[4.8.7, 5.0.0)",
+          "Log4Net.Async": "[2.0.4, 3.0.0)",
+          "Lucene.Net": "[2.9.4.1, 3.0.0)",
+          "Markdown": "[1.14.7, 2.0.0)",
+          "Microsoft.AspNet.Identity.Owin": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.Mvc": "[5.2.3, 6.0.0)",
+          "Microsoft.AspNet.SignalR.Core": "[2.2.1, 3.0.0)",
+          "Microsoft.AspNet.WebApi": "[5.2.3, 6.0.0)",
+          "Microsoft.Owin.Host.SystemWeb": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.Cookies": "[3.1.0, 4.0.0)",
+          "Microsoft.Owin.Security.OAuth": "[3.1.0, 4.0.0)",
+          "MiniProfiler": "[2.1.0, 3.0.0)",
+          "MySql.Data": "[6.9.9, 7.0.0)",
+          "Newtonsoft.Json": "[10.0.2, 11.0.0)",
+          "System.Threading.Tasks.Dataflow": "[4.7.0, 5.0.0)",
+          "System.ValueTuple": "[4.4.0, 5.0.0)",
+          "log4net": "[2.0.8, 3.0.0)",
+          "semver": "[1.1.2, 3.0.0)"
+        },
+        "compile": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.ApplicationBlocks.Data.dll": {},
+          "lib/net45/SQLCE4Umbraco.dll": {},
+          "lib/net45/System.Data.SqlServerCe.Entity.dll": {},
+          "lib/net45/System.Data.SqlServerCe.dll": {},
+          "lib/net45/TidyNet.dll": {},
+          "lib/net45/Umbraco.Core.dll": {},
+          "lib/net45/Umbraco.Web.UI.dll": {},
+          "lib/net45/UmbracoExamine.dll": {},
+          "lib/net45/businesslogic.dll": {},
+          "lib/net45/cms.dll": {},
+          "lib/net45/controls.dll": {},
+          "lib/net45/interfaces.dll": {},
+          "lib/net45/log4net.dll": {},
+          "lib/net45/umbraco.DataLayer.dll": {},
+          "lib/net45/umbraco.MacroEngines.dll": {},
+          "lib/net45/umbraco.dll": {},
+          "lib/net45/umbraco.editorControls.dll": {},
+          "lib/net45/umbraco.providers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoMapper/3.3.1": {
+      "sha512": "6pCunP4L1rZRu+wgMCivsgu/52mZOCc2mxIfPWDLHSVL8g/8+gtVBSHT0K8yoJwaOXFtaGUilV5WoVqKAHdswQ==",
+      "type": "package",
+      "path": "automapper/3.3.1",
+      "files": [
+        "automapper.3.3.1.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/MonoAndroid/AutoMapper.Android.dll",
+        "lib/MonoAndroid/AutoMapper.Android.pdb",
+        "lib/MonoAndroid/AutoMapper.dll",
+        "lib/MonoAndroid/AutoMapper.pdb",
+        "lib/MonoAndroid/AutoMapper.xml",
+        "lib/MonoTouch/AutoMapper.dll",
+        "lib/MonoTouch/AutoMapper.iOS.dll",
+        "lib/MonoTouch/AutoMapper.iOS.pdb",
+        "lib/MonoTouch/AutoMapper.pdb",
+        "lib/MonoTouch/AutoMapper.xml",
+        "lib/net40/AutoMapper.Net4.dll",
+        "lib/net40/AutoMapper.Net4.pdb",
+        "lib/net40/AutoMapper.dll",
+        "lib/net40/AutoMapper.pdb",
+        "lib/net40/AutoMapper.xml",
+        "lib/portable-windows8+net40+wp8+sl5+MonoAndroid+MonoTouch/AutoMapper.dll",
+        "lib/portable-windows8+net40+wp8+sl5+MonoAndroid+MonoTouch/AutoMapper.pdb",
+        "lib/portable-windows8+net40+wp8+sl5+MonoAndroid+MonoTouch/AutoMapper.xml",
+        "lib/portable-windows8+net40+wp8+wpa81+sl5+MonoAndroid+MonoTouch/AutoMapper.dll",
+        "lib/portable-windows8+net40+wp8+wpa81+sl5+MonoAndroid+MonoTouch/AutoMapper.pdb",
+        "lib/portable-windows8+net40+wp8+wpa81+sl5+MonoAndroid+MonoTouch/AutoMapper.xml",
+        "lib/sl5/AutoMapper.SL5.dll",
+        "lib/sl5/AutoMapper.SL5.pdb",
+        "lib/sl5/AutoMapper.dll",
+        "lib/sl5/AutoMapper.pdb",
+        "lib/sl5/AutoMapper.xml",
+        "lib/windows8/AutoMapper.WinRT.dll",
+        "lib/windows8/AutoMapper.WinRT.pdb",
+        "lib/windows8/AutoMapper.dll",
+        "lib/windows8/AutoMapper.pdb",
+        "lib/windows8/AutoMapper.xml",
+        "lib/wp8/AutoMapper.WP8.dll",
+        "lib/wp8/AutoMapper.WP8.pdb",
+        "lib/wp8/AutoMapper.dll",
+        "lib/wp8/AutoMapper.pdb",
+        "lib/wp8/AutoMapper.xml",
+        "lib/wpa81/AutoMapper.WPA81.dll",
+        "lib/wpa81/AutoMapper.WPA81.pdb",
+        "lib/wpa81/AutoMapper.dll",
+        "lib/wpa81/AutoMapper.pdb",
+        "lib/wpa81/AutoMapper.xml",
+        "tools/AutoMapper.targets",
+        "tools/MonoAndroid/Install.ps1",
+        "tools/MonoAndroid/uninstall.ps1",
+        "tools/MonoTouch/Install.ps1",
+        "tools/MonoTouch/uninstall.ps1",
+        "tools/net40/Install.ps1",
+        "tools/net40/uninstall.ps1",
+        "tools/sl5/Install.ps1",
+        "tools/sl5/uninstall.ps1",
+        "tools/windows8/Install.ps1",
+        "tools/windows8/uninstall.ps1",
+        "tools/wp8/Install.ps1",
+        "tools/wp8/uninstall.ps1",
+        "tools/wpa81/Install.ps1",
+        "tools/wpa81/uninstall.ps1"
+      ]
+    },
+    "ClientDependency/1.9.6": {
+      "sha512": "E9jrpDGi5+qaNUR1KLMyECXU4oSnNZSVaosPxMvn/2lajLyrYAFXwBhMDUEziSIfyGWoUHA6dM0DEsAi01SM6Q==",
+      "type": "package",
+      "path": "clientdependency/1.9.6",
+      "files": [
+        "Content/web.config.install.xdt",
+        "Content/web.config.uninstall.xdt",
+        "clientdependency.1.9.6.nupkg.sha512",
+        "clientdependency.nuspec",
+        "lib/net40/ClientDependency.Core.dll",
+        "lib/net40/ClientDependency.Core.pdb",
+        "lib/net45/ClientDependency.Core.dll",
+        "lib/net45/ClientDependency.Core.pdb"
+      ]
+    },
+    "ClientDependency-Mvc5/1.8.0": {
+      "sha512": "LauKtL72wcm/Gw4H5u/AMwvHoyyw/sUdYuNQ4fIYs0dgfIRfjR6Dkf4+ThehsVXVYBBBJHQSUL/vDzM6eudUDg==",
+      "type": "package",
+      "path": "clientdependency-mvc5/1.8.0",
+      "files": [
+        "Content/web.config.transform",
+        "clientdependency-mvc5.1.8.0.nupkg.sha512",
+        "clientdependency-mvc5.nuspec",
+        "lib/net45/ClientDependency.Core.Mvc.dll",
+        "lib/net45/ClientDependency.Core.Mvc.pdb"
+      ]
+    },
+    "Examine/0.1.89": {
+      "sha512": "KKy8IwJqv+sE5BS6HQwPzeBsW9m0VPoxHsVR6pGvWcba2qtLFocBMASCSBVUrepPb6Z3AVW8N5MmxO3xYY4lHQ==",
+      "type": "package",
+      "path": "examine/0.1.89",
+      "files": [
+        "examine.0.1.89.nupkg.sha512",
+        "examine.nuspec",
+        "lib/net45/Examine.dll",
+        "lib/net45/Examine.pdb"
+      ]
+    },
+    "HtmlAgilityPack/1.4.9.5": {
+      "sha512": "zk7zsIaPkyBvYoVDsnx52SbKtvcmo2bcgNBshhSG++RnHMYoh0dqxRuQSznY+w6luiqR35OiHTk1L73SUAGKLw==",
+      "type": "package",
+      "path": "htmlagilitypack/1.4.9.5",
+      "files": [
+        "HAPIcon.png",
+        "htmlagilitypack.1.4.9.5.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net20/HtmlAgilityPack.dll",
+        "lib/Net20/HtmlAgilityPack.pdb",
+        "lib/Net20/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.pri",
+        "lib/NetCore45/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/sl5/HtmlAgilityPack.XML",
+        "lib/sl5/HtmlAgilityPack.dll",
+        "lib/sl5/HtmlAgilityPack.pdb",
+        "readme.txt"
+      ]
+    },
+    "ImageProcessor/2.5.6": {
+      "sha512": "L0AHfDN8PXjT75y/GJhCnBF9r2RS61b8tkGdIt6bhnZUKF55//QbEQJoZl6cYN+c/csGg3v5xpavBCliCSFK+w==",
+      "type": "package",
+      "path": "imageprocessor/2.5.6",
+      "files": [
+        "imageprocessor.2.5.6.nupkg.sha512",
+        "imageprocessor.nuspec",
+        "lib/net40/ImageProcessor.XML",
+        "lib/net40/ImageProcessor.dll",
+        "lib/net45/ImageProcessor.XML",
+        "lib/net45/ImageProcessor.dll"
+      ]
+    },
+    "ImageProcessor.Web/4.8.7": {
+      "sha512": "rWxVAAUOjQaLHVV+e/NECtsHPejhlLoE6+mwbVjFz41xRDOmYFHxVczCSLCxqVXg5Ue+h3aeWiV3F2/pRXcKpQ==",
+      "type": "package",
+      "path": "imageprocessor.web/4.8.7",
+      "files": [
+        "content/web.config.transform",
+        "imageprocessor.web.4.8.7.nupkg.sha512",
+        "imageprocessor.web.nuspec",
+        "lib/net45/ImageProcessor.Web.dll",
+        "lib/net45/ImageProcessor.Web.xml"
+      ]
+    },
+    "log4net/2.0.8": {
+      "sha512": "N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA==",
+      "type": "package",
+      "path": "log4net/2.0.8",
+      "files": [
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "log4net.2.0.8.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "Log4Net.Async/2.0.4": {
+      "sha512": "JkpTgSpY5z4W4iPosCy6UtE04d28dIkLwfsBTTDTO3nDZPBU2uITyPqvlylW4NIp+fIZkA3EdSzb2fv23QMkeg==",
+      "type": "package",
+      "path": "log4net.async/2.0.4",
+      "files": [
+        "lib/net40/Log4Net.Async.dll",
+        "log4net.async.2.0.4.nupkg.sha512",
+        "log4net.async.nuspec"
+      ]
+    },
+    "Lucene.Net/2.9.4.1": {
+      "sha512": "GwICd+T4QgKpvnqMR832c8dJyz3iC8QurxnUYko7yDcAoB6upPdXuoLdohnvtAm9hPrbOkYSMAL5HDzDfE1k4g==",
+      "type": "package",
+      "path": "lucene.net/2.9.4.1",
+      "files": [
+        "lib/net40/Lucene.Net.XML",
+        "lib/net40/Lucene.Net.dll",
+        "lucene.net.2.9.4.1.nupkg.sha512",
+        "lucene.net.nuspec"
+      ]
+    },
+    "Markdown/1.14.7": {
+      "sha512": "JimllEJp9qvASuKph9Ggq0d3DLQ08stv0OVnLBxXzuezcPClo7CT1dZuV3336S6RYeg+MUxJbxW52sQfN61Z7Q==",
+      "type": "package",
+      "path": "markdown/1.14.7",
+      "files": [
+        "lib/net45/MarkdownSharp.dll",
+        "lib/netstandard1.3/MarkdownSharp.dll",
+        "markdown.1.14.7.nupkg.sha512",
+        "markdown.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.1": {
+      "sha512": "jjurNglpmcv0SLBd4Fmar8ZoJ2yqfTf6iuP3p8wVH7Nvanfo8l3qTBzq3qRQz2BQlb6iXJiDWPjcnIImVz512g==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.core/2.2.1",
+      "files": [
+        "lib/net45/Microsoft.AspNet.Identity.Core.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Core.xml",
+        "microsoft.aspnet.identity.core.2.2.1.nupkg.sha512",
+        "microsoft.aspnet.identity.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Identity.Owin/2.2.1": {
+      "sha512": "Cz/dqC85+6bgPj9Mt1qGLJ+v8HdTqXTMe1ms4e8pzPXJjDJw3DK7XtimtDtWwiDs63vnIDgy195TByV9wxEwjA==",
+      "type": "package",
+      "path": "microsoft.aspnet.identity.owin/2.2.1",
+      "files": [
+        "lib/net45/Microsoft.AspNet.Identity.Owin.dll",
+        "lib/net45/Microsoft.AspNet.Identity.Owin.xml",
+        "microsoft.aspnet.identity.owin.2.2.1.nupkg.sha512",
+        "microsoft.aspnet.identity.owin.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Mvc/5.2.3": {
+      "sha512": "i8jZf5QrbcFmjiYWRD7o7qTak/oXKxV80MgP4cZ33A8GC0RBtBIdZ1VHaloGUg+qsHUz5rVkGpwenM+ugDz5PA==",
+      "type": "package",
+      "path": "microsoft.aspnet.mvc/5.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "lib/net45/System.Web.Mvc.dll",
+        "lib/net45/System.Web.Mvc.xml",
+        "microsoft.aspnet.mvc.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.mvc.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Razor/3.2.3": {
+      "sha512": "leta+Q73O7+pR8ThTqXmwaNMSqwZQQ3BHfpUHd8S1XaUWe1jRVLitMHqo1AmY7wPNLyankPA1beiUKEGj8Q3Dw==",
+      "type": "package",
+      "path": "microsoft.aspnet.razor/3.2.3",
+      "files": [
+        "lib/net45/System.Web.Razor.dll",
+        "lib/net45/System.Web.Razor.xml",
+        "microsoft.aspnet.razor.3.2.3.nupkg.sha512",
+        "microsoft.aspnet.razor.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.SignalR.Core/2.2.1": {
+      "sha512": "EUZlRTmUZ3di6hxCiyyhnUld/8AKTOuX1DAGhNLv+ocTfmnOJyS42AEzgxdIk1jRAlEpUEuoicVBBI07A2FU2g==",
+      "type": "package",
+      "path": "microsoft.aspnet.signalr.core/2.2.1",
+      "files": [
+        "lib/net45/Microsoft.AspNet.SignalR.Core.dll",
+        "lib/net45/Microsoft.AspNet.SignalR.Core.xml",
+        "microsoft.aspnet.signalr.core.2.2.1.nupkg.sha512",
+        "microsoft.aspnet.signalr.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi/5.2.3": {
+      "sha512": "mGBfSy61+2dIdPwgguW8EaCVsbYTwwVHeCc/pVq1PhlZS87ColgJ++Hve40TrX6Dtqde0fo9M1Tt19rXlHC5GA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi/5.2.3",
+      "files": [
+        "microsoft.aspnet.webapi.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.3": {
+      "sha512": "3kiI8peSXbXHDDrRuo+QaX0iCEVRe0nvn2dBDRw656uPX32UalbBlSIDUDlJxu05eau4tnuhsikiUuugvvoUoQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.3",
+      "files": [
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Core/5.2.3": {
+      "sha512": "o90QYlRV8VKR1S7+EcJw9w8WSyVFLl+IIzN8ILZ+n2t6rsc/KS8kBxRzA7wCFPRUHhebCfLqilBk39phvanx3g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.core/5.2.3",
+      "files": [
+        "Content/web.config.transform",
+        "lib/net45/System.Web.Http.dll",
+        "lib/net45/System.Web.Http.xml",
+        "microsoft.aspnet.webapi.core.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.core.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.WebHost/5.2.3": {
+      "sha512": "bhm4/BKdS3t6nK2R3NjCpxulcwtMFiHqVBDLuN3W5So1PhZfE+RBs7eVazGOhsEKCk7PoSmiSnl9DG0cpyfHtA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.webhost/5.2.3",
+      "files": [
+        "lib/net45/System.Web.Http.WebHost.dll",
+        "lib/net45/System.Web.Http.WebHost.xml",
+        "microsoft.aspnet.webapi.webhost.5.2.3.nupkg.sha512",
+        "microsoft.aspnet.webapi.webhost.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebPages/3.2.3": {
+      "sha512": "zbtxBERla5RE/mhftwbrXOzc0r6lh8WcnjpGW7QQe+PvSDDx1BgsTUGzfCXO/vJznHNpY5oCSYLt8Q5vUu7F0g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webpages/3.2.3",
+      "files": [
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
+        "lib/net45/System.Web.Helpers.dll",
+        "lib/net45/System.Web.Helpers.xml",
+        "lib/net45/System.Web.WebPages.Deployment.dll",
+        "lib/net45/System.Web.WebPages.Deployment.xml",
+        "lib/net45/System.Web.WebPages.Razor.dll",
+        "lib/net45/System.Web.WebPages.Razor.xml",
+        "lib/net45/System.Web.WebPages.dll",
+        "lib/net45/System.Web.WebPages.xml",
+        "microsoft.aspnet.webpages.3.2.3.nupkg.sha512",
+        "microsoft.aspnet.webpages.nuspec"
+      ]
+    },
+    "Microsoft.IO.RecyclableMemoryStream/1.2.2": {
+      "sha512": "LA4RBTStohA0hAAs6oKchmIC5M5Mjd5MwfB7vbbl+312N5kXj8abTGOgwZy6ASJYLCiqiiK5kHS0hDGEgfkB8g==",
+      "type": "package",
+      "path": "microsoft.io.recyclablememorystream/1.2.2",
+      "files": [
+        "lib/net40/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net40/Microsoft.IO.RecyclableMemoryStream.pdb",
+        "lib/net45/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/net45/Microsoft.IO.RecyclableMemoryStream.pdb",
+        "lib/netstandard1.4/Microsoft.IO.RecyclableMemoryStream.deps.json",
+        "lib/netstandard1.4/Microsoft.IO.RecyclableMemoryStream.dll",
+        "lib/netstandard1.4/Microsoft.IO.RecyclableMemoryStream.pdb",
+        "microsoft.io.recyclablememorystream.1.2.2.nupkg.sha512",
+        "microsoft.io.recyclablememorystream.nuspec"
+      ]
+    },
+    "Microsoft.Owin/3.1.0": {
+      "sha512": "dtDln3a84XlfPRyFNLfbqAxfoK5dFC7sH9E78KNZnRHXOEdelEBOczrUFkYG0h/+qfM7NlwBKEul5dZeVTY2gA==",
+      "type": "package",
+      "path": "microsoft.owin/3.1.0",
+      "files": [
+        "lib/net45/Microsoft.Owin.XML",
+        "lib/net45/Microsoft.Owin.dll",
+        "microsoft.owin.3.1.0.nupkg.sha512",
+        "microsoft.owin.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Host.SystemWeb/3.1.0": {
+      "sha512": "Rh6kQcgnfNILpJSGZCbA8ANsdNiD+hDqQURrjR0f4Rp+820OcGLRRMGf9su9FHXCpXnWyNR33yuptslR/bdXmg==",
+      "type": "package",
+      "path": "microsoft.owin.host.systemweb/3.1.0",
+      "files": [
+        "lib/net45/Microsoft.Owin.Host.SystemWeb.dll",
+        "lib/net45/Microsoft.Owin.Host.SystemWeb.xml",
+        "microsoft.owin.host.systemweb.3.1.0.nupkg.sha512",
+        "microsoft.owin.host.systemweb.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security/3.1.0": {
+      "sha512": "2/5nPoucLtjyGgIQGKzb0vDLQhzwRz/8nPSHu6TpLdvOwB7uZKQRUwLKJY+mWODyyOK3a/CEeJoty/p5Va0kfg==",
+      "type": "package",
+      "path": "microsoft.owin.security/3.1.0",
+      "files": [
+        "lib/net45/Microsoft.Owin.Security.XML",
+        "lib/net45/Microsoft.Owin.Security.dll",
+        "microsoft.owin.security.3.1.0.nupkg.sha512",
+        "microsoft.owin.security.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security.Cookies/3.1.0": {
+      "sha512": "x/V/Cb499TBW36dXOyZScXmseujSTq8oxMo8K/AizB0mqCZJuhvnDCFUMdcBDuQF1Gs5ePGbhLghqRKeVuFetw==",
+      "type": "package",
+      "path": "microsoft.owin.security.cookies/3.1.0",
+      "files": [
+        "lib/net45/Microsoft.Owin.Security.Cookies.dll",
+        "lib/net45/Microsoft.Owin.Security.Cookies.xml",
+        "microsoft.owin.security.cookies.3.1.0.nupkg.sha512",
+        "microsoft.owin.security.cookies.nuspec"
+      ]
+    },
+    "Microsoft.Owin.Security.OAuth/3.1.0": {
+      "sha512": "oSBvSe/u/r9u2quLas/rpABHtzUGTz8wrjEotpEUkJXxJmxaC+B8XwmYtkDVE4FigtbcRiDdN2lKhkwBJIb/2Q==",
+      "type": "package",
+      "path": "microsoft.owin.security.oauth/3.1.0",
+      "files": [
+        "lib/net45/Microsoft.Owin.Security.OAuth.XML",
+        "lib/net45/Microsoft.Owin.Security.OAuth.dll",
+        "microsoft.owin.security.oauth.3.1.0.nupkg.sha512",
+        "microsoft.owin.security.oauth.nuspec"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "files": [
+        "lib/net40/Microsoft.Web.Infrastructure.dll",
+        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+        "microsoft.web.infrastructure.nuspec"
+      ]
+    },
+    "MiniProfiler/2.1.0": {
+      "sha512": "uTw6C4g2bGVaeonKRDZnWK68t4KllcptOI/kBWlD2jCl2PJOOM0u6StbYw8pi01niPOsYKiQZYE9GsVKPmUXSg==",
+      "type": "package",
+      "path": "miniprofiler/2.1.0",
+      "files": [
+        "lib/net40/MiniProfiler.dll",
+        "lib/net40/MiniProfiler.pdb",
+        "lib/net40/MiniProfiler.xml",
+        "miniprofiler.2.1.0.nupkg.sha512",
+        "miniprofiler.nuspec"
+      ]
+    },
+    "MySql.Data/6.9.9": {
+      "sha512": "rhpv2iJBqvvHU9gkhn/OZfhanQT/jZpfovyO9TEbJl5jLKMvABgxSkIPQbubrvR04M2/ZtdTeI9fC9WSkBe2wA==",
+      "type": "package",
+      "path": "mysql.data/6.9.9",
+      "files": [
+        "CHANGES",
+        "Readme.txt",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net40/MySql.Data.dll",
+        "lib/net45/MySql.Data.dll",
+        "mysql.data.6.9.9.nupkg.sha512",
+        "mysql.data.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/10.0.2": {
+      "sha512": "iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
+      "type": "package",
+      "path": "newtonsoft.json/10.0.2",
+      "files": [
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wpa81+wp8/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml",
+        "newtonsoft.json.10.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Owin/1.0.0": {
+      "sha512": "OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "type": "package",
+      "path": "owin/1.0.0",
+      "files": [
+        "lib/net40/Owin.dll",
+        "owin.1.0.0.nupkg.sha512",
+        "owin.nuspec"
+      ]
+    },
+    "semver/1.1.2": {
+      "sha512": "6sibgNDegzGvmeAfBmWNnuuRS3JfgF5W4O7Lw6qGC5rqqG2WlQp0P++ouPKHessO5G8C0LylkEb/G2ylb7UF2Q==",
+      "type": "package",
+      "path": "semver/1.1.2",
+      "files": [
+        "lib/net20/Semver.dll",
+        "lib/net35/Semver.dll",
+        "lib/net40/Semver.dll",
+        "lib/net45/Semver.dll",
+        "lib/net451/Semver.dll",
+        "semver.1.1.2.nupkg.sha512",
+        "semver.nuspec"
+      ]
+    },
+    "SharpZipLib/0.86.0": {
+      "sha512": "5DbS1SlKLMi+WG00Cm0ueYf2oyXJrowETQk8nx96rmdjTuHsA3laPykGV7Sxi0R5Xxfx0Kh/EfacAZ1f6M7y/g==",
+      "type": "package",
+      "path": "sharpziplib/0.86.0",
+      "files": [
+        "lib/11/ICSharpCode.SharpZipLib.dll",
+        "lib/20/ICSharpCode.SharpZipLib.dll",
+        "lib/SL3/SharpZipLib.Silverlight3.dll",
+        "lib/SL4/SharpZipLib.Silverlight4.dll",
+        "sharpziplib.0.86.0.nupkg.sha512",
+        "sharpziplib.nuspec"
+      ]
+    },
+    "System.Threading.Tasks.Dataflow/4.7.0": {
+      "sha512": "wcKLDI8tN5KpcMcTQwXfcLHrFdfINIxDBOZS3rE8QqOds/0fRhCkR+IEfQokxT7s/Yluqk+LG/ZqZdQmA/xgCw==",
+      "type": "package",
+      "path": "system.threading.tasks.dataflow/4.7.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.XML",
+        "lib/netstandard1.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.XML",
+        "lib/netstandard1.1/System.Threading.Tasks.Dataflow.dll",
+        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.XML",
+        "lib/portable-net45+win8+wpa81/System.Threading.Tasks.Dataflow.dll",
+        "system.threading.tasks.dataflow.4.7.0.nupkg.sha512",
+        "system.threading.tasks.dataflow.nuspec"
+      ]
+    },
+    "System.ValueTuple/4.4.0": {
+      "sha512": "BahUww/+mdP4ARCAh2RQhQTg13wYLVrBb9SYVgW8ZlrwjraGCXHGjo0oIiUfZ34LUZkMMR+RAzR7dEY4S1HeQQ==",
+      "type": "package",
+      "path": "system.valuetuple/4.4.0",
+      "files": [
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net461/System.ValueTuple.xml",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.4.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "UmbracoCms.Core/7.10.0": {
+      "sha512": "dsa1YzrU5IIOujdUceminX7HdEnPMqXxRPcrx/bU1Sia0jfo1hnzBxb+arkLAVEC+a59u6q24h0M5bcNdbFzNw==",
+      "type": "package",
+      "path": "umbracocms.core/7.10.0",
+      "files": [
+        "lib/net45/Microsoft.ApplicationBlocks.Data.dll",
+        "lib/net45/SQLCE4Umbraco.dll",
+        "lib/net45/SQLCE4Umbraco.xml",
+        "lib/net45/System.Data.SqlServerCe.Entity.dll",
+        "lib/net45/System.Data.SqlServerCe.dll",
+        "lib/net45/TidyNet.dll",
+        "lib/net45/Umbraco.Core.dll",
+        "lib/net45/Umbraco.Core.xml",
+        "lib/net45/Umbraco.Web.UI.dll",
+        "lib/net45/Umbraco.Web.UI.xml",
+        "lib/net45/UmbracoExamine.dll",
+        "lib/net45/UmbracoExamine.xml",
+        "lib/net45/businesslogic.dll",
+        "lib/net45/businesslogic.xml",
+        "lib/net45/cms.dll",
+        "lib/net45/cms.xml",
+        "lib/net45/controls.dll",
+        "lib/net45/controls.xml",
+        "lib/net45/interfaces.dll",
+        "lib/net45/interfaces.xml",
+        "lib/net45/log4net.dll",
+        "lib/net45/umbraco.DataLayer.dll",
+        "lib/net45/umbraco.DataLayer.xml",
+        "lib/net45/umbraco.MacroEngines.dll",
+        "lib/net45/umbraco.MacroEngines.xml",
+        "lib/net45/umbraco.dll",
+        "lib/net45/umbraco.editorControls.dll",
+        "lib/net45/umbraco.editorControls.xml",
+        "lib/net45/umbraco.providers.dll",
+        "lib/net45/umbraco.providers.xml",
+        "lib/net45/umbraco.xml",
+        "tools/install.ps1",
+        "umbracocms.core.7.10.0.nupkg.sha512",
+        "umbracocms.core.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "UmbracoCms.Core >= 7.10.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Mohanraj.Lakshmikant\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Mo\\Per\\Cheapdrinks\\Cheapdrinks.Web.Extensions\\Cheapdrinks.Web.Extensions.csproj",
+      "projectName": "Cheapdrinks.Web.Extensions",
+      "projectPath": "C:\\Mo\\Per\\Cheapdrinks\\Cheapdrinks.Web.Extensions\\Cheapdrinks.Web.Extensions.csproj",
+      "packagesPath": "C:\\Users\\Mohanraj.Lakshmikant\\.nuget\\packages\\",
+      "outputPath": "C:\\Mo\\Per\\Cheapdrinks\\Cheapdrinks.Web.Extensions\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Mohanraj.Lakshmikant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://w2globaldata.pkgs.visualstudio.com/_packaging/W2GlobalData/nuget/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "UmbracoCms.Core": {
+            "target": "Package",
+            "version": "[7.10.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

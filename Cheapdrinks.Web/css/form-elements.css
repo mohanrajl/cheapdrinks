@@ -1,0 +1,27 @@
+button.btn {
+    height: 50px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #428BCA;
+    border: 0;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+}
+
+    button.btn:hover {
+        opacity: 0.6;
+        color: #fff;
+    }
+
+    button.btn:active {
+        outline: 0;
+        opacity: 0.6;
+        color: #fff;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }

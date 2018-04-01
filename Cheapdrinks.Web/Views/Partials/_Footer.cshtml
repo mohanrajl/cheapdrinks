@@ -1,0 +1,27 @@
+﻿@using Our.Umbraco.Vorto.Extensions
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var loginStatusModel = Members.GetCurrentLoginStatus();
+}
+
+<footer id="footer">
+    <div class="container">
+        <div class="header">
+            <h3 class="text-center">
+                @if (!loginStatusModel.IsLoggedIn)
+                {
+                <b>
+                    @Model.Content.GetProperty("footerText") / @Model.Content.GetProperty("footerText")
+                </b>
+                }
+                else
+                {
+                <b>
+                    @Model.Content.GetProperty("footerText")
+                </b>
+                }
+            </h3>
+        </div>
+    </div>
+</footer>
+

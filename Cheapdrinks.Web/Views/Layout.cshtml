@@ -1,0 +1,35 @@
+﻿@using System.Web.Optimization
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<meta name="description" content="@Umbraco.Field("description")">*@
+    <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/356a25e9-e119-47b9-99d4-5f056feed2cf.css" />
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <title>@Umbraco.Field("title")</title>
+    <link rel="shortcut icon" href="~/images/ff_title.ico" />
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/css")
+    <link rel='stylesheet' id='pirate_forms_front_styles-css' href='~/css/front.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css-css' href='~/css/font-awesome.min.css' type='text/css' media='all' />
+</head>
+<body>
+    <div id="mobilebgfix">
+        <div class="mobile-bg-fix-img-wrap">
+            <div class="mobile-bg-fix-img"></div>
+        </div>
+        <div class="mobile-bg-fix-whole-site">
+            <div id="content" class="site-content">
+                @RenderBody()
+            </div><!-- .site-content -->
+        </div>
+    </div><!-- .mobile-bg-fix-wrap -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

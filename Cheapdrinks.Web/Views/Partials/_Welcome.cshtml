@@ -1,0 +1,31 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<dynamic>
+@{    
+    var loginStatusModel = this.Members.GetCurrentLoginStatus();    
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="col-sm-2 col-sm-offset-11 text">
+            <img src="~/images/fft.jpg" alt="WED 2017">
+        </div>
+    </div>
+</div>
+<div class="row">    
+    <div class="col-lg-12">
+        <h4 class="page-header">
+            <b>
+                @this.Umbraco.AssignedContentItem.GetPropertyValue("welcomeUserText") @(loginStatusModel.Name)
+                @if (!string.IsNullOrEmpty(this.Model))
+                {
+                    <span>( @this.Model )</span>
+                }
+            </b>
+        </h4>
+        @if (this.Umbraco.AssignedContentItem.GetPropertyValue("welcomeMessage") != null)
+        {
+            <h3>@Html.Raw(this.Umbraco.AssignedContentItem.GetPropertyValue("welcomeMessage"))</h3>
+        }
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+

@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : 30 March 2018 12:51:18
+   Source : C:\Mo\Per\Cheapdrinks\Cheapdrinks.Web\Umbraco_Client\
+     Dest : C:\Mo\Per\Cheapdrinks\Cheapdrinks.Web\App_Data\NuGetBackup\20180330-125105\Umbraco_Client\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\Mo\Per\Cheapdrinks\Cheapdrinks.Web\Umbraco_Client\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         1         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : 30 March 2018 12:51:18
+
